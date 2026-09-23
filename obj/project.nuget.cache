@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "dgSpecHash": "oGUO9bbLmWs=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\student1\\source\\repos\\GitBook1\\GitBook1\\GitBook1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\student1\\.nuget\\packages\\avalonia\\11.3.11\\avalonia.11.3.11.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.25547.20250602\\avalonia.angle.windows.natives.2.1.25547.20250602.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\avalonia.buildservices\\11.3.2\\avalonia.buildservices.11.3.2.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\avalonia.controls.colorpicker\\11.3.11\\avalonia.controls.colorpicker.11.3.11.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\avalonia.desktop\\11.3.11\\avalonia.desktop.11.3.11.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\avalonia.diagnostics\\11.3.11\\avalonia.diagnostics.11.3.11.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\avalonia.fonts.inter\\11.3.11\\avalonia.fonts.inter.11.3.11.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\avalonia.freedesktop\\11.3.11\\avalonia.freedesktop.11.3.11.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\avalonia.native\\11.3.11\\avalonia.native.11.3.11.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\avalonia.remote.protocol\\11.3.11\\avalonia.remote.protocol.11.3.11.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\avalonia.skia\\11.3.11\\avalonia.skia.11.3.11.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\avalonia.themes.fluent\\11.3.11\\avalonia.themes.fluent.11.3.11.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\avalonia.themes.simple\\11.3.11\\avalonia.themes.simple.11.3.11.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\avalonia.win32\\11.3.11\\avalonia.win32.11.3.11.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\avalonia.x11\\11.3.11\\avalonia.x11.11.3.11.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.2\\communitytoolkit.mvvm.8.4.2.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\dapper\\2.1.86\\dapper.2.1.86.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\harfbuzzsharp\\8.3.1.1\\harfbuzzsharp.8.3.1.1.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\harfbuzzsharp.nativeassets.linux\\8.3.1.1\\harfbuzzsharp.nativeassets.linux.8.3.1.1.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\harfbuzzsharp.nativeassets.macos\\8.3.1.1\\harfbuzzsharp.nativeassets.macos.8.3.1.1.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\harfbuzzsharp.nativeassets.webassembly\\8.3.1.1\\harfbuzzsharp.nativeassets.webassembly.8.3.1.1.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\harfbuzzsharp.nativeassets.win32\\8.3.1.1\\harfbuzzsharp.nativeassets.win32.8.3.1.1.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\microcom.runtime\\0.11.0\\microcom.runtime.0.11.0.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\microsoft.data.sqlite\\10.0.12\\microsoft.data.sqlite.10.0.12.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\microsoft.data.sqlite.core\\10.0.12\\microsoft.data.sqlite.core.10.0.12.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\skiasharp\\2.88.9\\skiasharp.2.88.9.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\skiasharp.nativeassets.linux\\2.88.9\\skiasharp.nativeassets.linux.2.88.9.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\skiasharp.nativeassets.macos\\2.88.9\\skiasharp.nativeassets.macos.2.88.9.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\skiasharp.nativeassets.webassembly\\2.88.9\\skiasharp.nativeassets.webassembly.2.88.9.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\skiasharp.nativeassets.win32\\2.88.9\\skiasharp.nativeassets.win32.2.88.9.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.12\\sqlitepclraw.bundle_e_sqlite3.2.1.12.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\sqlitepclraw.core\\3.0.5\\sqlitepclraw.core.3.0.5.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.12\\sqlitepclraw.lib.e_sqlite3.2.1.12.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.12\\sqlitepclraw.provider.e_sqlite3.2.1.12.nupkg.sha512",
+    "C:\\Users\\student1\\.nuget\\packages\\tmds.dbus.protocol\\0.21.2\\tmds.dbus.protocol.0.21.2.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "У пакета \"Tmds.DBus.Protocol\" 0.21.2 есть известная уязвимость https://github.com/advisories/GHSA-xrw6-gwf8-vvr9 (уровень серьезности: высокий уровень)",
+      "projectPath": "C:\\Users\\student1\\source\\repos\\GitBook1\\GitBook1\\GitBook1.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\student1\\source\\repos\\GitBook1\\GitBook1\\GitBook1.csproj",
+      "libraryId": "Tmds.DBus.Protocol",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}

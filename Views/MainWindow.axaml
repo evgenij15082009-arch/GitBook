@@ -1,0 +1,81 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:GitBook.ViewModels"
+        x:Class="GitBook.Views.MainWindow"
+        x:DataType="vm:MainViewModel"
+        Title="💖 GitBook 💖" Height="600" Width="900"
+        Background="#FFFFFF">
+
+    <Grid>
+        <!-- 1. ЭКРАН АВТОРИЗАЦИИ И РЕГИСТРАЦИИ -->
+        <Border IsVisible="{Binding !IsLoggedIn}" HorizontalAlignment="Center" VerticalAlignment="Center"
+                Background="#9400D3" Padding="30" CornerRadius="20" Width="350">
+            <StackPanel Spacing="12">
+                <TextBlock Text="💖 ВХОД В БИБЛИОТЕКУ 💖" FontSize="18" FontWeight="Bold" Foreground="#FFA500" HorizontalAlignment="Center"/>
+                
+                <TextBox Watermark="Логин" Text="{Binding Username, Mode=TwoWay}" Background="White"/>
+                <TextBox Watermark="Пароль" PasswordChar="*" Text="{Binding Password, Mode=TwoWay}" Background="White"/>
+                
+                <TextBlock Text="{Binding AuthMessage}" Foreground="Red" FontSize="12" HorizontalAlignment="Center"/>
+                
+                <Button Content="Войти" Command="{Binding LoginCommand}" Background="#008000" Foreground="White" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" CornerRadius="10"/>
+                <Button Content="Зарегистрироваться" Command="{Binding RegisterCommand}" Background="#808080" Foreground="White" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" CornerRadius="10"/>
+            </StackPanel>
+        </Border>
+
+        <!-- 2. ЭКРАН БИБЛИОТЕКИ (После входа) -->
+        <Grid IsVisible="{Binding IsLoggedIn}" RowDefinitions="Auto, *">
+            <!-- Шапка -->
+            <Border Grid.Row="0" Background="#FFA500" Padding="15">
+                <TextBlock Text="📚 GitBook " FontSize="20" FontWeight="Bold" Foreground="White"/>
+            </Border>
+
+            <!-- Контент -->
+            <Grid Grid.Row="1" ColumnDefinitions="280, *, 250" Margin="10">
+                <!-- Слева: Поиск и Список -->
+                <Border Grid.Column="0" Background="#FFA500" CornerRadius="12" Padding="10" Margin="0,0,10,0">
+                    <Grid RowDefinitions="Auto, *">
+                        <TextBox Grid.Row="0" Watermark="🔍 Поиск...
+
+" Text="{Binding SearchQuery, Mode=TwoWay}" Background="White" Margin="0,0,0,10"/>
+                        <ListBox Grid.Row="1" ItemsSource="{Binding Books}" SelectedItem="{Binding SelectedBook}">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid ColumnDefinitions="*, Auto">
+                                        <TextBlock Text="{Binding Title}" FontWeight="Bold" Foreground="#FFA500"/>
+                                        <Button Grid.Column="1" Command="{Binding $parent[Window].((vm:MainViewModel)DataContext).ToggleFavoriteCommand}" CommandParameter="{Binding}" Background="Transparent">
+                                            <TextBlock Text="⭐" IsVisible="{Binding IsFavorite}"/>
+                                        </Button>
+                                    </Grid>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </Grid>
+                </Border>
+
+                <!-- Центр: Чтение -->
+                <Border Grid.Column="1" Background="White" CornerRadius="12" Padding="15" Margin="0,0,10,0">
+                    <ScrollViewer>
+                        <StackPanel Spacing="10">
+                            <TextBlock Text="{Binding SelectedBook.Title}" FontSize="20" FontWeight="Bold" Foreground="#FFA500"/>
+                            <TextBlock Text="{Binding SelectedBook.Author}" FontSize="14" Foreground="#808080"/>
+                            <TextBlock Text="{Binding SelectedBook.Content}" FontSize="13" TextWrapping="Wrap" Foreground="#FFA500" Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </ScrollViewer>
+                </Border>
+
+                <!-- Справа: Добавление -->
+                <Border Grid.Column="2" Background="#FFA500" CornerRadius="12" Padding="10">
+                    <StackPanel Spacing="8">
+                        <TextBlock Text="➕ Добавить книгу" FontWeight="Bold" Foreground="#4169E1" HorizontalAlignment="Center"/>
+                        <TextBox Watermark="Название" Text="{Binding NewTitle, Mode=TwoWay}" Background="White"/>
+                        <TextBox Watermark="Автор" Text="{Binding NewAuthor, Mode=TwoWay}" Background="White"/>
+                        <TextBox Watermark="Жанр" Text="{Binding NewGenre, Mode=TwoWay}" Background="White"/>
+                        <TextBox Watermark="Текст книги..." Text="{Binding NewContent, Mode=TwoWay}" Height="120" AcceptsReturn="True" TextWrapping="Wrap" Background="White"/>
+                        <Button Content="Сохранить" Command="{Binding AddBookCommand}" Background="#0000FF" Foreground="White" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
